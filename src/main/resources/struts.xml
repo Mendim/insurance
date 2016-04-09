@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+    <constant name="struts.ui.theme" value="simple" />
+	<constant name="struts.ui.templateDir" value="template" />
+	<constant name="struts.ui.templateSuffix" value="ftl" />
+
+    <constant name="struts.action.excludePattern" value="/static/.*?" />
+
+
+    <package name="adminDefault" namespace="/" extends="struts-default">
+    	<interceptors>
+    		<interceptor name="UserCheckInterceptor" class="cn.annpeter.insurance.interceptor.AuthInterceptor"></interceptor>
+    		<interceptor-stack name="insurance-stack">
+    			<interceptor-ref name="defaultStack"></interceptor-ref>
+    			<interceptor-ref name="UserCheckInterceptor"></interceptor-ref>
+    		</interceptor-stack>
+    	</interceptors>
+        <default-interceptor-ref name="insurance-stack"></default-interceptor-ref>
+        <global-results>
+            <result name="error"></result>
+        </global-results>
+    </package>
+
+    <package name="appDefault" namespace="/" extends="struts-default">
+
+    </package>
+</struts>
+

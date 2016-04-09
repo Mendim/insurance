@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+
+    <session-factory>
+        <!-- 配置hibernate的基本属性 -->
+
+        <!-- 方言 -->
+
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/insurance?useUnicode=true&amp;characterEncoding=utf-8&amp;useSSL=false</property>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.username">insurance</property>
+        <property name="hibernate.connection.password">insurance</property>
+
+
+        <!-- 是否显示及格式化sql -->
+        <property name="hibernate.show_sql">true</property>
+        <property name="use_sql_comments">true</property>
+
+        <!-- 生成数据表的策略 -->
+        <property name="hibernate.hbm2ddl.auto">update</property>
+
+
+        <!-- 二级缓存 -->
+
+        <property name="hibernate.temp.use_jdbc_metadata_defaults">false</property>
+
+    </session-factory>
+</hibernate-configuration>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<navigaters>
+	<navigater>
+		<title>首页</title>   <!--用于右边的导航-->
+		<action>index</action>  <!--访问所属的Action-->
+		<method>index</method>  <!--访问所属的Method-->
+		<img>fa fa-home</img>
+		<desc>后台管理首页</desc> <!--用于顶部显示-->
+	</navigater>
+
+	<navigater>
+		<title>用户管理</title>
+		<action></action>
+		<method></method>
+		<img>fa fa-user</img>
+		<desc>用户管理</desc>
+		<navigaters>
+			<navigater>
+				<title>用户列表</title>
+				<action>member</action>
+				<method>list</method>
+				<img>fa fa-long-arrow-right</img>
+				<desc>用户信息管理</desc>
+			</navigater>
+            <navigater>
+                <title>系统账户列表</title>
+                <action>administrator</action>
+                <method>list</method>
+                <img>fa fa-user</img>
+                <desc>系统管理账户设置</desc>
+            </navigater>
+            <navigater>
+                <title>系统分组列表</title>
+                <action>authgroup</action>
+                <method>list</method>
+                <img>fa fa-user</img>
+                <desc>系统分组设置</desc>
+            </navigater>
+		</navigaters>
+	</navigater>
+
+    <navigater>
+        <title>产品管理</title>
+        <action></action>
+        <method></method>
+        <img>fa fa-camera-retro</img>
+        <desc>产品管理</desc>
+        <navigaters>
+            <navigater>
+                <title>提供商列表</title>
+                <action>supplier</action>
+                <method>list</method>
+                <img>fa fa-info</img>
+                <desc>提供商列表查看</desc>
+            </navigater>
+            <navigater>
+                <title>产品类别管理</title>
+                <action>productcate</action>
+                <method>list</method>
+                <img>fa fa-info</img>
+                <desc>产品类别编辑</desc>
+            </navigater>
+            <navigater>
+                <title>卡单列表</title>
+                <action>productkadan</action>
+                <method>list</method>
+                <img>fa fa-info</img>
+                <desc>卡单列表查看</desc>
+            </navigater>
+            <navigater>
+                <title>团体意外险列表</title>
+                <action>producttuanyi</action>
+                <method>list</method>
+                <img>fa fa-info</img>
+                <desc>卡单列表查看</desc>
+            </navigater>
+        </navigaters>
+    </navigater>
+
+    <navigater>
+        <title>财务管理</title>
+        <action></action>
+        <method></method>
+        <img>glyphicon glyphicon-usd</img>
+        <desc>财务管理</desc>
+        <navigaters>
+            <navigater>
+                <title>账户管理</title>
+                <action>zhanghu</action>
+                <method>list</method>
+                <img>fa fa-long-arrow-right</img>
+                <desc>账户列表</desc>
+            </navigater>
+            <navigater>
+                <title>会计</title>
+                <action></action>
+                <method></method>
+                <img>fa fa-long-arrow-right</img>
+                <desc>会计管理</desc>
+                <navigaters>
+                    <navigater>
+                        <title>项目管理</title>
+                        <action>xiangmu</action>
+                        <method>list</method>
+                        <img>fa fa-tag</img>
+                        <desc>项目列表</desc>
+                    </navigater>
+                    <navigater>
+                        <title>科目管理</title>
+                        <action>kemu</action>
+                        <method>list</method>
+                        <img>fa fa-tag</img>
+                        <desc>科目列表</desc>
+                    </navigater>
+                </navigaters>
+            </navigater>
+            <navigater>
+                <title>订单管理</title>
+                <action>business</action>
+                <method>list</method>
+                <img>fa fa-list</img>
+                <desc>订单列表</desc>
+            </navigater>
+        </navigaters>
+    </navigater>
+    <navigater>
+        <title>广告管理</title>
+        <action></action>
+        <method></method>
+        <img>glyphicon glyphicon-usd</img>
+        <desc>广告管理</desc>
+        <navigaters>
+            <navigater>
+                <title>广告项目管理</title>
+                <action>ad</action>
+                <method>list</method>
+                <img>fa fa-tag</img>
+                <desc>广告项目列表</desc>
+            </navigater>
+            <navigater>
+                <title>广告位置管理</title>
+                <action>adpos</action>
+                <method>list</method>
+                <img>fa fa-tag</img>
+                <desc>广告位置列表</desc>
+            </navigater>
+        </navigaters>
+    </navigater>
+
+
+
+</navigaters>

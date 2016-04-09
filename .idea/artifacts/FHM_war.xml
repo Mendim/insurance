@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="FHM:war">
+    <output-path>$PROJECT_DIR$/../../FHM Maven Webapp/target</output-path>
+    <root id="archive" name="FHM.war">
+      <element id="artifact" artifact-name="FHM:war exploded" />
+    </root>
+  </artifact>
+</component>

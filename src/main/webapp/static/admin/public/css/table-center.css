@@ -1,0 +1,29 @@
+/***
+用于在列表显示时,列表行内元素垂直居中
+使用方法
+<td><span>INFO</span></td>
+***/
+
+
+table.dataTable.dtr-inline.collapsed>tbody>tr>td>span,
+table.dataTable.dtr-inline.collapsed>tbody>tr>th>span{
+    line-height: 35px;text-align: center;
+}
+
+table.dataTable.dtr-inline.collapsed>tbody tr>td:first-child,
+table.dataTable.dtr-inline.collapsed>tbody tr>th:first-child{
+    width: 6%;
+    padding-left: 40px;
+}
+table.dataTable.dtr-inline.collapsed>tbody>tr>td:first-child:before,
+table.dataTable.dtr-inline.collapsed>tbody>tr>th:first-child:before{
+    top: 16px;
+    left: 10px;
+}
+
+/***
+    用于将child的tile布满整个td
+***/
+table.dataTable>tbody>tr.child ul {
+    display: block;
+}
